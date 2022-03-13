@@ -22,3 +22,25 @@ data.forEach((dataRow) => {
     });
     
 });
+
+function handleClick() {
+    // Select the very first element that matches our selector string: "#datetime"
+    // Look for the #datetime id in the HTML tags
+    // Grab date information and hold it in the "date" variable
+    let date = d3.select("#datetime").property("value");
+    let filteredData = tableData;
+
+    // If a date is entered, filter the default data to show only the date entered
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+    // Rebuild the table using the filtered data
+    // @NOTE: If no date was entered, then filteredData will
+    // just be the original tableData.
+    buildTable(filteredData);
+    };
+
+// Attach an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
+// Build the table when the page loads
+buildTable(tableData);
