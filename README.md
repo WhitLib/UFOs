@@ -48,3 +48,8 @@ Enter the desired shape in the 'Enter Shape' box, and hit **Enter**.
 
 https://user-images.githubusercontent.com/95978097/162591441-4be28c10-108e-4771-9011-b311ed7d551e.mov
 
+## Summary
+
+One drawback to this table and HTML design is that the **total number of results are not displayed**. This could become problematic and frustrating for users who are filtering data and may be looking for a certain number of results and are forced to count them manually. 
+
+Another drawback to this design is that there are no options available when inputting data into each filter box. For an individual who may be using this page for the first time, and is not familiar with the data, would not necessarily know what values can be used to populate data for each field. 
